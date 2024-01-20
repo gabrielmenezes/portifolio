@@ -1,0 +1,122 @@
+body {
+  background-image: url("images/bg_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  font-family: "Anaheim", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  margin: 20px 10px;
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav a:hover {
+  color: var(--primary, #fe7f2d);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.main-content {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  column-gap: 20px;
+  grid-template-columns: 500px auto;
+}
+
+.texts {
+  color: #fff;
+  margin-left: 130px;
+  font-size: 40px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texts h1 {
+  font-family: Anaheim;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.texts span {
+  color: var(--primary, #fe7f2d);
+  font-size: 42px;
+}
+
+.description {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.list-skills {
+  list-style-type: none;
+  margin: auto -40px;
+}
+
+.list-skills-item {
+  margin: 15px auto;
+  font-size: 28px;
+  width: full;
+}
+
+.my-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-pic {
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  clip-path: inset(2% 3%);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-down {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.scroll-down:hover {
+  animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
